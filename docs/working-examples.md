@@ -47,8 +47,8 @@ title: Working examples
 | [PyCryptodome][]                  | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | A self-contained cryptographic library for Python |
 | [PyYAML][]                        | ![github icon][] | ![apple icon][] | Canonical source repository for PyYAML |
 | [numexpr][]                       | ![github icon][] ![travisci icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas, bcolz and more |
-| [h5py][]                          | ![azurepipelines icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | HDF5 for Python -- The h5py package is a Pythonic interface to the HDF5 binary data format. |
 | [PyAV][]                          | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Pythonic bindings for FFmpeg's libraries. |
+| [h5py][]                          | ![azurepipelines icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | HDF5 for Python -- The h5py package is a Pythonic interface to the HDF5 binary data format. |
 | [Wrapt][]                         | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | A Python module for decorators, wrappers and monkey patching. |
 | [Line Profiler][]                 | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Line-by-line profiling for Python |
 | [pikepdf][]                       | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | A Python library for reading and writing PDF, powered by qpdf |
@@ -63,8 +63,8 @@ title: Working examples
 | [Parselmouth][]                   | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | A Python interface to the Praat software package, using pybind11, C++17 and CMake, with the core Praat static library built only once and shared between wheels. |
 | [DeepForest][]                    | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | An Efficient, Scalable and Optimized Python Framework for Deep Forest (2021.2.1) |
 | [google neuroglancer][]           | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | WebGL-based viewer for volumetric data |
-| [AutoPy][]                        | ![travisci icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Includes a Windows Travis build. |
 | [CTranslate2][]                   | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Includes libraries from the [Intel oneAPI toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html) and CUDA kernels compiled for multiple GPU architectures. |
+| [AutoPy][]                        | ![travisci icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Includes a Windows Travis build. |
 | [H3-py][]                         | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Python bindings for H3, a hierarchical hexagonal geospatial indexing system |
 | [Rtree][]                         | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Rtree: spatial index for Python GIS ¶ |
 | [markupsafe][]                    | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Safely add untrusted strings to HTML/XML markup. |
@@ -73,15 +73,15 @@ title: Working examples
 | [python-rapidjson][]              | ![travisci icon][] ![gitlab icon][] ![appveyor icon][] | ![windows icon][] ![linux icon][] | Python wrapper around rapidjson |
 | [KDEpy][]                         | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Kernel Density Estimation in Python |
 | [python-snappy][]                 | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Python bindings for the snappy google library |
+| [mosec][]                         | ![github icon][] | ![linux icon][] ![apple icon][] | A high-performance serving framework for ML models, offers dynamic batching and multi-stage pipeline to fully exploit your compute machine |
 | [time-machine][]                  | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Time mocking library using only the CPython C API. |
 | [tgcalls][]                       | ![github icon][] | ![apple icon][] ![windows icon][] | Python `pybind11` binding to Telegram's WebRTC library with third party dependencies like `OpenSSL`, `MozJPEG`, `FFmpeg`, etc. |
-| [pybind11 python_example][]       | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Example pybind11 module built with a Python-based build system |
 | [dd-trace-py][]                   | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Uses custom alternate arch emulation on GitHub |
+| [pybind11 python_example][]       | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Example pybind11 module built with a Python-based build system |
 | [sourmash][]                      | ![github icon][] | ![apple icon][] ![linux icon][] ![windows icon][] | Quickly search, compare, and analyze genomic and metagenomic data sets. |
 | [cyvcf2][]                        | ![github icon][] | ![apple icon][] ![linux icon][] | cython + htslib == fast VCF and BCF processing |
 | [matrixprofile][]                 | ![travisci icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | A Python 3 library making time series data mining tasks, utilizing matrix profile algorithms, accessible to everyone. |
 | [abess][]                         | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | A fast best-subset selection library. It uses cibuildwheel to build a large project with C++ extensions. |
-| [mosec][]                         | ![github icon][] | ![linux icon][] ![apple icon][] | A high-performance serving framework for ML models, offers dynamic batching and multi-stage pipeline to fully exploit your compute machine |
 | [jq.py][]                         | ![travisci icon][] | ![apple icon][] ![linux icon][] | Python bindings for jq |
 | [iminuit][]                       | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Jupyter-friendly Python interface for C++ MINUIT2 |
 | [Tokenizer][]                     | ![github icon][] | ![windows icon][] ![apple icon][] ![linux icon][] | Fast and customizable text tokenization library with BPE and SentencePiece support |
@@ -152,8 +152,8 @@ title: Working examples
 [PyCryptodome]: https://github.com/Legrandin/pycryptodome
 [PyYAML]: https://github.com/yaml/pyyaml
 [numexpr]: https://github.com/pydata/numexpr
-[h5py]: https://github.com/h5py/h5py
 [PyAV]: https://github.com/PyAV-Org/PyAV
+[h5py]: https://github.com/h5py/h5py
 [Wrapt]: https://github.com/GrahamDumpleton/wrapt
 [Line Profiler]: https://github.com/pyutils/line_profiler
 [pikepdf]: https://github.com/pikepdf/pikepdf
@@ -168,8 +168,8 @@ title: Working examples
 [Parselmouth]: https://github.com/YannickJadoul/Parselmouth
 [DeepForest]: https://github.com/LAMDA-NJU/Deep-Forest
 [google neuroglancer]: https://github.com/google/neuroglancer
-[AutoPy]: https://github.com/autopilot-rs/autopy
 [CTranslate2]: https://github.com/OpenNMT/CTranslate2
+[AutoPy]: https://github.com/autopilot-rs/autopy
 [H3-py]: https://github.com/uber/h3-py
 [Rtree]: https://github.com/Toblerity/rtree
 [markupsafe]: https://github.com/pallets/markupsafe
@@ -178,15 +178,15 @@ title: Working examples
 [python-rapidjson]: https://github.com/python-rapidjson/python-rapidjson
 [KDEpy]: https://github.com/tommyod/KDEpy
 [python-snappy]: https://github.com/andrix/python-snappy
+[mosec]: https://github.com/mosecorg/mosec
 [time-machine]: https://github.com/adamchainz/time-machine
 [tgcalls]: https://github.com/MarshalX/tgcalls
-[pybind11 python_example]: https://github.com/pybind/python_example
 [dd-trace-py]: https://github.com/DataDog/dd-trace-py
+[pybind11 python_example]: https://github.com/pybind/python_example
 [sourmash]: https://github.com/dib-lab/sourmash
 [cyvcf2]: https://github.com/brentp/cyvcf2
 [matrixprofile]: https://github.com/matrix-profile-foundation/matrixprofile
 [abess]: https://github.com/abess-team/abess
-[mosec]: https://github.com/mosecorg/mosec
 [jq.py]: https://github.com/mwilliamson/jq.py
 [iminuit]: https://github.com/scikit-hep/iminuit
 [Tokenizer]: https://github.com/OpenNMT/Tokenizer
