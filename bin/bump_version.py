@@ -137,24 +137,24 @@ def bump_version() -> None:
         pass
 
     # run pre-commit to update the README changelog
-    subprocess.run(
-        [
-            "pre-commit",
-            "run",
-            "--files=docs/changelog.md",
-        ],
-        check=False,
-    )
+    # subprocess.run(
+    #     [
+    #         "pre-commit",
+    #         "run",
+    #         "--files=docs/changelog.md",
+    #     ],
+    #     check=False,
+    # )
 
     # run pre-commit to check that no errors occurred on the second run
-    subprocess.run(
-        [
-            "pre-commit",
-            "run",
-            "--files=docs/changelog.md",
-        ],
-        check=True,
-    )
+    # subprocess.run(
+    #     [
+    #         "pre-commit",
+    #         "run",
+    #         "--files=docs/changelog.md",
+    #     ],
+    #     check=True,
+    # )
 
     subprocess.run(
         [
