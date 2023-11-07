@@ -4,7 +4,7 @@ jobs:
   linux-wheels:
     working_directory: ~/linux-wheels
     docker:
-      - image: cimg/python:3.12
+      - image: circleci/python:3.9
     steps:
       - checkout
       - setup_remote_docker
@@ -19,7 +19,7 @@ jobs:
   linux-aarch64-wheels:
     working_directory: ~/linux-aarch64-wheels
     machine:
-      image: default
+      image: ubuntu-2004:2022.04.1
     # resource_class is what tells CircleCI to use an ARM worker for native arm builds
     # https://circleci.com/product/features/resource-classes/
     resource_class: arm.medium
@@ -36,14 +36,12 @@ jobs:
   osx-wheels:
     working_directory: ~/osx-wheels
     macos:
-      xcode: 15.4.0
-    resource_class: macos.m1.medium.gen1
+      xcode: 12.5.1
     steps:
       - checkout
       - run:
           name: Build the OS X wheels.
           command: |
-            sudo softwareupdate --install-rosetta --agree-to-license  # for python<=3.8 or x86_64/universal2 tests
             pip3 install cibuildwheel==2.22.0
             cibuildwheel --output-dir wheelhouse
       - store_artifacts:
