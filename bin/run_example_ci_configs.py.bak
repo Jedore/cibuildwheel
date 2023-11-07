@@ -151,7 +151,7 @@ def run_example_ci_configs(config_files=None):
         print()
         print("> **Examples test run**")
         print("> ")
-        print(f"> Branch: [{branch_name}](https://github.com/Jedore/cibuildwheel-cn/tree/{branch_name})")
+        print(f"> Branch: [{branch_name}](https://github.com/pypa/cibuildwheel/tree/{branch_name})")
         print("> ")
         print("> | Service | Config | Status |")
         print("> |---|---|---|")
