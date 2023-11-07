@@ -25,7 +25,7 @@ DIR: Final[Path] = Path(__file__).parent.parent.resolve()
 RESOURCES_DIR: Final[Path] = DIR / "cibuildwheel/resources"
 
 # GET_VIRTUALENV_GITHUB: Final[str] = "https://github.com/pypa/get-virtualenv"
-GET_VIRTUALENV_GITHUB: Final[str] = "https://gitee.com/jedore/get-virtualenv"
+GET_VIRTUALENV_GITHUB: Final[str] = "https://bitbucket.org/jedoreee/get-virtualenv"
 GET_VIRTUALENV_URL_TEMPLATE: Final[
     str
 ] = f"{GET_VIRTUALENV_GITHUB}/raw/{{version}}/public/virtualenv.pyz"
