@@ -1,11 +1,13 @@
 name: Release
 
-on:
-  workflow_dispatch:
-  pull_request:
-  release:
-    types:
-    - published
+
+on: [ workflow_dispatch ]
+#on:
+#  workflow_dispatch:
+#  pull_request:
+#  release:
+#    types:
+#    - published
 
 jobs:
   dist:
