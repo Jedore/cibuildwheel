@@ -13,30 +13,30 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - uses: hynek/build-and-inspect-python-package@v2
+    - name: Build SDist and wheel
+      run: pipx run build
+
+    - uses: actions/upload-artifact@v3
+      with:
+        path: dist/*
+
+    - name: Check metadata
+      run: pipx run twine check dist/*
 
   publish:
     needs: [dist]
     runs-on: ubuntu-latest
     if: github.event_name == 'release' && github.event.action == 'published'
-    environment:
-      name: pypi
-      url: https://pypi.org/p/cibuildwheel
+    environment: pypi
     permissions:
       id-token: write
-      attestations: write
 
     steps:
-    - uses: actions/download-artifact@v4
+    - uses: actions/download-artifact@v3
       with:
-        name: Packages
+        name: artifact
         path: dist
-
-    - name: Generate artifact attestation for sdist and wheel
-      uses: actions/attest-build-provenance@ef244123eb79f2f7a7e75d99086184180e6d0018 # v1.4.4
-      with:
-        subject-path: "dist/cibuildwheel-*"
 
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        attestations: true
+        repository-url: https://test.pypi.org/legacy/
