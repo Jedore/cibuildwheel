@@ -1,8 +1,8 @@
 name: Update the vX.Y tag
 
 on:
-  release:
-    types: [released]
+#  release:
+#    types: [released]
   workflow_dispatch:
     inputs:
       TAG_NAME:
