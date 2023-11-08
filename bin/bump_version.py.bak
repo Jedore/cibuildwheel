@@ -52,7 +52,7 @@ def bump_version() -> None:
         cd_date, cd_time, cd_tz = commit_date_str.split(" ")
 
         url_opts = urllib.parse.urlencode({"q": f"is:pr merged:>{cd_date}T{cd_time}{cd_tz}"})
-        url = f"https://github.com/Jedore/cibuildwheel-cn/pulls?{url_opts}"
+        url = f"https://github.com/pypa/cibuildwheel/pulls?{url_opts}"
 
         print(f"PRs merged since last release:\n  {url}")
         print()
@@ -137,24 +137,24 @@ def bump_version() -> None:
         pass
 
     # run pre-commit to update the README changelog
-    # subprocess.run(
-    #     [
-    #         "pre-commit",
-    #         "run",
-    #         "--files=docs/changelog.md",
-    #     ],
-    #     check=False,
-    # )
+    subprocess.run(
+        [
+            "pre-commit",
+            "run",
+            "--files=docs/changelog.md",
+        ],
+        check=False,
+    )
 
     # run pre-commit to check that no errors occurred on the second run
-    # subprocess.run(
-    #     [
-    #         "pre-commit",
-    #         "run",
-    #         "--files=docs/changelog.md",
-    #     ],
-    #     check=True,
-    # )
+    subprocess.run(
+        [
+            "pre-commit",
+            "run",
+            "--files=docs/changelog.md",
+        ],
+        check=True,
+    )
 
     subprocess.run(
         [
@@ -184,7 +184,7 @@ def bump_version() -> None:
     print("    git push && git push --tags")
     print()
 
-    release_url = "https://github.com/Jedore/cibuildwheel-cn/releases/new?" + urllib.parse.urlencode(
+    release_url = "https://github.com/pypa/cibuildwheel/releases/new?" + urllib.parse.urlencode(
         {"tag": f"v{new_version}"}
     )
     print("Then create a release at the URL:")
